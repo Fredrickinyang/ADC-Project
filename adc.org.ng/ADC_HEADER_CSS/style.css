@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+* {
+    font-family: Work Sans;
+    padding: 0;
+    margin: 0;
+}
+
+.head-section {
+    background-image: url(/ADC_HEADER_IMAGES/Header_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000a8;
+    background-blend-mode: darken;
+    /* height: 500px; */
+}
+
+.request-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.request-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.top-links {
+    width: 285.92px;
+    height: 63px;
+    text-align: center;
+    line-height: 63px;
+    font-weight: 550;
+}
+
+.request-links div:nth-child(1) {
+    background-color: #009541;
+}
+
+.request-links div:nth-child(2) {
+    background-color: #224F5A;
+}
+
+.request-links div:nth-child(3) {
+    background-color: #EF7E2D;
+}
+
+.header-content {
+    padding: 0 60px 0 60px;
+}
+
+.logo-navs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.navigations {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 86px;
+}
+
+.navigations li {
+    list-style: none;
+}
+
+.navigations a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    top: 50px;
+    padding: 0 50px 0 0;
+}
+
+.manifesto-div {
+    padding: 5% 0 10% 0;
+}
+
+.manifesto-text {
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#bars {
+    display: none;
+    font-size: 40px;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .header-content {
+        padding: 0 20px 0 20px;
+    }
+    .logo {
+        margin-top: 30px;
+    }
+    .request-links {
+        justify-content: end;
+    }
+    .top-links {
+        width: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    #bars {
+        color: #ffffff;
+        display: block;
+        padding-top: 40px;
+    }
+    .logo {
+        margin-top: 30px;
+    }
+    .navigations {
+        position: absolute;
+        display: block;
+        width: 100%;
+        top: 29%;
+        background-color: #009541;
+        left: -100%;
+        text-align: center;
+        line-height: 13vh;
+        z-index: 111;
+    }
+    .navigations a:hover {
+        background-color: #224F5A;
+        font-size: 25px;
+        display: block;
+    }
+    #check:checked~.navigations {
+        left: 0;
+        transition: .4s;
+    }
+    .request-links {
+        justify-content: space-evenly;
+    }
+    .top-links {
+        width: 31%;
+    }
+}
+
+@media (max-width: 320px) {
+    #take-action {
+        line-height: 30px
+    }
+}
