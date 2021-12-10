@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+* {
+    font-family: Work Sans;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar-links p {
+    line-height: 4rem;
+}
+
+#sidebar-links i {
+    font-size: 1.4rem;
+}
+
+#welcome-div {
+    background-color: #e9ffec;
+    border-radius: 15px;
+}
+
+.welcome-text {
+    font-size: 16px;
+}
+
+#personal-details-div {
+    background-color: #e9ffec;
+    border-radius: 15px;
+}
+
+#personal-details-div i {
+    font-size: 45px;
+    color: #c2c2c2;
+}
+
+#personal-details-div li {
+    list-style: none;
+}
+
+#user-info {
+    line-height: 1.6rem;
+}
+
+#user-img i {
+    font-size: 5rem;
+}
+
+#dues-div {
+    border-radius: 15px;
+    background-color: #e9ffec;
+}
+
+#resources-div {
+    border-radius: 15px;
+    background-color: #e9ffec;
+}
