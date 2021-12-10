@@ -53,3 +53,7 @@
     border-radius: 15px;
     background-color: #e9ffec;
 }
+
+#email {
+    word-break: break-all;
+}
