@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Progress bars</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="progress" id="progress"></div>
+    </div>
+    <p id="count" style="color:rgb(255, 221, 29); font-size:20px"></p>
+
+    <script>
+        var countValue = 0;
+
+
+        function progresscount() {
+            prog = document.getElementById("count").innerHTML = countValue;
+            let progressBar = document.getElementById("progress");
+            let percentageProgress = progressBar.style.width = String(countValue) + "%";
+            countValue == 100 ? countValue = 0 : "";
+            countValue++;
+            timeout = setTimeout(progresscount, 1000);
+
+        }
+        progresscount()
+    </script>
+    </script>
+</body>
+
+</html>
